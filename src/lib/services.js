@@ -1,3 +1,5 @@
+//vamos a usar las funciones del archivo para almacenar los usuarios y publicaciones de la red social 
+
 /*
   This function should clear all data from local storage
 */
