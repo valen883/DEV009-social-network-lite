@@ -1,0 +1,18 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    height: 540px;
+    width: 320px;
+    background-size: contain;
+}
+
+button{
+    background-color: darkseagreen;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: black;
+}

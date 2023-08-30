@@ -10,7 +10,7 @@ function login(navigateTo) {
     inputPass.placeholder="Contraseña";
 
     title.textContent = 'login';
-    buttonLogin.textContent ='Ingresa';
+    buttonLogin.textContent ='Iniciar sesión';
 
     buttonRetorn.textContent = 'home';
     buttonRetorn.addEventListener('click', function(){
