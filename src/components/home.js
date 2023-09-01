@@ -3,6 +3,7 @@ import img from '../images/vista1.jpg';
 function home(navigateTo) {
     const section = document.createElement('section')
     const buttonLog = document.createElement('button');
+    buttonLog.setAttribute("id", "idPrueba");
     const image =document.createElement('img');
     image.src =img;
 
