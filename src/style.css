@@ -14,7 +14,7 @@ img{
 }
 
 #idPrueba{
-    position: relative;
+    position: inherit;
     top: 80%;
     left: 30%;
 }
@@ -31,8 +31,9 @@ h2{
     font-size: 5em;
     position: fixed;
     top: 15%;
-    left: 37%;
+    left: 42%;
 }
+
 
 #boxL{
     margin: 10px;
@@ -43,19 +44,26 @@ h2{
     
     position: fixed;
     top: 5%;
-    left: 35%;
+    left: 40%;
+}
+#name{
+    width: 230px;
+    height: 30px;
+    position: fixed;
+    top: 250px;
+    left: 41%;
 }
 #mail{
     width: 230px;
     height: 30px;
     position: fixed;
-    top: 250px;
-    left: 37%;
+    top: 300px;
+    left: 41%;
 }
 #passw{
     width: 230px;
     height: 30px;
     position: fixed;
-    top: 300px;
-    left: 37%;
+    top: 350px;
+    left: 41%;
 }

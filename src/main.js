@@ -3,6 +3,7 @@
 import home from './components/home.js';
 import login from './components/loggin.js';
 import error from './components/error.js';
+import registro from './components/registro.js';
 
 const root = document.getElementById('root')
 
@@ -10,6 +11,7 @@ const routes = [
     { path: '/', component: home },
     { path: '/login', component: login },
     { path: '/error', component: error },
+    { path: '/registro', component: registro },
 ];
 
 const defaultRoute = '/';
