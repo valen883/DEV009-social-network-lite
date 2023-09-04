@@ -1,4 +1,5 @@
 import img from '../images/vista1.jpg';
+import { register } from '../lib/index.js';
 
 
 function registro(navigateTo){
@@ -23,16 +24,23 @@ function registro(navigateTo){
     inputEmail.placeholder="Correo electrónico";
     inputPass.placeholder="Contraseña";
 
-    buttonLogin.textContent ='Aceptar';
-
-
+    buttonLogin.textContent ='Registrarme';
+    
+    
     buttonRetorn.textContent = 'home';
     buttonRetorn.addEventListener('click', function(){
         navigateTo('/');
+    })
+    buttonLogin.addEventListener('click',function(){
+        let mail =inputEmail.value;
+        let passwrd = inputPass.value;
+        register(mail, passwrd);
     })
     section.append(image, buttonRetorn, box, title,inputName, inputEmail, inputPass, buttonLogin);
     return section;
 
 }
+
+
 
 export default registro;
