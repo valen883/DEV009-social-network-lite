@@ -4,6 +4,7 @@ import home from './components/home.js';
 import login from './components/loggin.js';
 import error from './components/error.js';
 import registro from './components/registro.js';
+import inicio from './components/inicio.js'
 
 const root = document.getElementById('root')
 
@@ -12,6 +13,7 @@ const routes = [
     { path: '/login', component: login },
     { path: '/error', component: error },
     { path: '/registro', component: registro },
+    { path: '/inicio', component: inicio },
 ];
 
 const defaultRoute = '/';
