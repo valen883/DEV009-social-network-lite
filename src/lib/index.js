@@ -6,3 +6,5 @@ export const myFunction = () => {
   // aqui tu codigo
   console.log('Hola mundo!');
 };
+
+export {createPost, deletePost, editPost, getPosts, init, login, register};
