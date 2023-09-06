@@ -5,14 +5,16 @@ function inicio(){
     const section = document.createElement('section')
     const image =document.createElement('img');
         image.src =img;
+    const box =document.createElement('div')
+    box.setAttribute("id", "boxI");
+
     
     
     
     
     
     
-    
-    section.append(image);
+    section.append(image,box,);
     return section;
 }
 

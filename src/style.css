@@ -84,3 +84,15 @@ h2{
     top: 350px;
     left: 41%;*/
 }
+
+#boxI{
+    margin: 8px;
+    width: 270px;
+    height: 480px;
+    background-color: rgba(181, 190, 177, 0.952);
+    border-radius: 40px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+
+}
