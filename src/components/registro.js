@@ -17,6 +17,7 @@ function registro(navigateTo){
     inputEmail.setAttribute("id", "mail");
     const inputPass = document.createElement('input');
     inputPass.setAttribute("id", "passw");
+    inputPass.type ='password';
     const buttonLogin = document.createElement('button');
 
     title.textContent = 'Valusic';
@@ -32,9 +33,14 @@ function registro(navigateTo){
         navigateTo('/');
     })
     buttonLogin.addEventListener('click',function(){
-        let mail =inputEmail.value;
+        let email =inputEmail.value;
         let passwrd = inputPass.value;
-        register(mail, passwrd);
+        if (register(email, passwrd)){
+           // console.log(email);
+            //console.log(passwrd);
+            navigateTo('/login');
+            alert('te has registrado satisfactoriamente')
+        };
     })
     section.append(image, buttonRetorn, box, title,inputName, inputEmail, inputPass, buttonLogin);
     return section;

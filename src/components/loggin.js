@@ -1,7 +1,7 @@
 import img from '../images/vista1.jpg';
+import { login } from '../lib/index.js';
 
-
-function login(navigateTo) {
+function loggin(navigateTo) {
     const section = document.createElement('section')
     const image =document.createElement('img');
     image.src =img;
@@ -25,8 +25,17 @@ function login(navigateTo) {
     buttonRetorn.addEventListener('click', function(){
         navigateTo('/');
     })
+    buttonLogin.addEventListener('click', function(){
+        let email = inputEmail.value;
+        let passwrd = inputPass.value;
+        if (login(email, passwrd)){
+             navigateTo('/inicio');
+         };
+    })
+
+
     section.append(image,box,title,inputEmail, inputPass,buttonLogin, buttonRetorn);
     return section;
 }
 
-export default login;
+export default loggin;
