@@ -15,6 +15,7 @@ img{
     text-align: center;
 }
 
+
 #idPrueba{
     position: inherit;
     top: 80%;
@@ -27,6 +28,9 @@ input{
 
 button{
     margin: 10px;
+    background-color: #62824B;
+    color: white;
+    border-radius: 10px;
 }
 
 h2{ 
@@ -110,10 +114,21 @@ h3{
 #boxName{
     margin: 8px;
     width: 270px;
-    height: 60px;
+    height: 30px;
     background-color: #698356b2;
     border-radius: 10px;
     position: fixed;
     top: 12%;
+    left: 5%;
+}
+
+#post{
+    margin: 8px;
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 21%;
     left: 5%;
 }

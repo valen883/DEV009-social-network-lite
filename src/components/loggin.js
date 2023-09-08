@@ -12,6 +12,7 @@ function loggin(navigateTo) {
     const inputEmail = document.createElement('input');
     inputEmail.setAttribute("id", "mail");
     const inputPass = document.createElement('input');
+    inputPass.type ='password';
     inputPass.setAttribute("id", "passw");
     const buttonLogin = document.createElement('button');
 
