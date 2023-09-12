@@ -132,3 +132,15 @@ h3{
     top: 21%;
     left: 5%;
 }
+
+#botonPublic{
+    margin: 4px;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border: gray;
+    border-radius: 5px;
+    position: fixed;
+    top: 32%;
+    right: 5px;
+}

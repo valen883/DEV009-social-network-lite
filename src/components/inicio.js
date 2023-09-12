@@ -11,12 +11,16 @@ function inicio(){
     const inputPost = document.createElement('input');
     inputPost.setAttribute("id", "post");
     inputPost.type ='text';
+    const boxPublic =document.createElement('div')
+    boxPublic.setAttribute("id", "botonPublic");
     
-    
+
+
     title.textContent ='Valusic';
     inputPost.placeholder ='¿En qué estas pensando?';
+    boxPublic.textContent = 'Publicar';
     
-    section.append(image, title, boxName, inputPost);
+    section.append(image, title, boxName, inputPost, boxPublic);
     return section;
 }
 
