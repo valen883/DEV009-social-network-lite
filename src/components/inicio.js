@@ -23,6 +23,7 @@ function inicio(){
     boxName.setAttribute("id", "boxName");
     inputPost.setAttribute("id", "post");
     boxPublic.setAttribute("id", "botonPublic");
+    divPost.setAttribute('id', 'dPost');
 
     boxName.textContent = getLoggedInUser().email.slice(0, 10);
     title.textContent ='Valusic';

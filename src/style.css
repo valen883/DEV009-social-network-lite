@@ -137,10 +137,23 @@ h3{
     margin: 4px;
     width: 70px;
     height: 30px;
-    background-color: brown;
+    background-color: #698356b2;
     border: gray;
     border-radius: 5px;
     position: fixed;
     top: 32%;
     right: 5px;
+}
+
+#dPost{
+    position: fixed;
+    top: 40%;
+    right: 5px;
+}
+
+article{
+    width: 18em;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    text-align: center;
 }
