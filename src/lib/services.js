@@ -108,6 +108,7 @@ export const getPosts = () => {
   }
 */
 export const createPost = (content, email) => {
+  console.log(content, email);
   //check content length
   if(content.length < 1){
     throw new Error("Content must be at least 1 character long");
