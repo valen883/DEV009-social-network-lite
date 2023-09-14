@@ -6,6 +6,7 @@ body{
     background: linear-gradient(to right, #ada6a6, #e0e0e0);
 }
 
+
 img{
     display: flex;
     height: 540px;
@@ -13,6 +14,7 @@ img{
     background-size: contain;
     text-align: center;
 }
+
 
 #idPrueba{
     position: inherit;
@@ -26,13 +28,25 @@ input{
 
 button{
     margin: 10px;
+    background-color: #62824B;
+    color: white;
+    border-radius: 10px;
 }
 
 h2{ 
+    color: #62824B;
     font-size: 5em;
     position: fixed;
     top: 15%;
     left: 12%;
+}
+
+h3{ 
+    color: #3f6822;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 7%;
 }
 
 
@@ -83,4 +97,50 @@ h2{
     /*desktop
     top: 350px;
     left: 41%;*/
+}
+
+#boxI{
+    margin: 8px;
+    width: 270px;
+    height: 480px;
+    background-color: rgba(181, 190, 177, 0.952);
+    border-radius: 40px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+
+}
+
+#boxName{
+    margin: 8px;
+    width: 270px;
+    height: 30px;
+    background-color: #698356b2;
+    border-radius: 10px;
+    position: fixed;
+    top: 12%;
+    left: 5%;
+}
+
+#post{
+    margin: 8px;
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 21%;
+    left: 5%;
+}
+
+#botonPublic{
+    margin: 4px;
+    width: 70px;
+    height: 30px;
+    background-color: brown;
+    border: gray;
+    border-radius: 5px;
+    position: fixed;
+    top: 32%;
+    right: 5px;
 }
