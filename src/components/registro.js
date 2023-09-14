@@ -45,7 +45,10 @@ function registro(navigateTo){
             alert('te has registrado satisfactoriamente')
         };
     })
-    section.append(image, buttonRetorn, box, title,formReg,inputName, inputEmail, inputPass, buttonLogin);
+
+    formReg.append(inputName, inputEmail, inputPass, buttonLogin);
+
+    section.append(image, buttonRetorn, box, title,formReg);
     return section;
 
 }

@@ -6,13 +6,13 @@ function loggin(navigateTo) {
     const image =document.createElement('img');
     const box =document.createElement('div')
     const title =document.createElement('h2')
-    const formReg = document.createElement('form');
+    const formLog = document.createElement('form');
     const inputEmail = document.createElement('input');
     const inputPass = document.createElement('input');
     const buttonLogin = document.createElement('button');
     const buttonRetorn = document.createElement('button');
     
-    formReg.classList.add('formLog');
+    formLog.classList.add('formLog');
 
     box.setAttribute("id", "boxL");
     inputEmail.setAttribute("id", "mail");
@@ -32,7 +32,8 @@ function loggin(navigateTo) {
     buttonRetorn.addEventListener('click', function(){
         navigateTo('/');
     })
-    buttonLogin.addEventListener('click', function(){
+    buttonLogin.addEventListener('click', function(a){
+        a.preventDefault();
         let email = inputEmail.value;
         let passwrd = inputPass.value;
         if (login(email, passwrd)){
@@ -40,8 +41,9 @@ function loggin(navigateTo) {
          };
     })
 
+    formLog.append(inputEmail, inputPass, buttonLogin);
 
-    section.append(image,box,title,formReg, inputEmail, inputPass,buttonLogin, buttonRetorn);
+    section.append(image,box,title,formLog, buttonRetorn);
     return section;
 }
 
