@@ -1,5 +1,5 @@
 import img from '../images/fondo.jpg'
-import { createPost, getLoggedInUser, getPosts } from '../lib/services.js';
+import { createPost, getLoggedInUser, getPosts, deletePost } from '../lib/services.js';
 
 
 function inicio(){
@@ -24,11 +24,13 @@ function inicio(){
     inputPost.setAttribute("id", "post");
     boxPublic.setAttribute("id", "botonPublic");
     divPost.setAttribute('id', 'dPost');
+    
 
     boxName.textContent = getLoggedInUser().email.slice(0, 10);
     title.textContent ='Valusic';
     inputPost.placeholder ='¿En qué estas pensando?';
     boxPublic.textContent = 'Publicar';
+
     
     function display(){
         console.log(getPosts());
@@ -36,7 +38,8 @@ function inicio(){
                     const divPublic = document.createElement('article');
             
                     divPublic.innerHTML  += ` <h4>${post.email.slice(0, 10)}</h4>
-                    <p>${post.content}</p>`
+                     <p>${post.content}</p>
+                     <button class="delete-post" data-id="${post.id}">🗑</button>`
                     divPost.append(divPublic);
         });
     }
@@ -51,9 +54,12 @@ function inicio(){
         display();
     })
 
+
+
     header.append(title, boxName);
     main.append(formPost, divPost);
     formPost.append(inputPost, boxPublic);
+
     section.append(image,header, main);
     return section;
 }

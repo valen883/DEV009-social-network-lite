@@ -3,7 +3,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #ada6a6, #e0e0e0);
 }
 
 
@@ -157,3 +156,15 @@ article{
     border-radius: 10px;
     text-align: center;
 }
+
+
+/*@media (max-width: 1024px) {
+    
+    img{       
+    display: flex;
+    height: 1000px;
+    width: 900px;
+    background-size: contain;
+    text-align: center;
+    }
+}*/
