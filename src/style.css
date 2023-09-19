@@ -15,10 +15,20 @@ img{
 }
 
 
-#idPrueba{
-    position: inherit;
-    top: 80%;
+#botonInicio{
+    position: fixed;
+    top: 75%;
     left: 30%;
+    width: 9em;
+    height: 3em;
+}
+
+#botonRegistro{
+    position: fixed;
+    top: 85%;
+    left: 30%;
+    width: 9em;
+    height: 3em;
 }
 
 input{
@@ -27,7 +37,7 @@ input{
 
 button{
     margin: 10px;
-    background-color: #62824B;
+    background-color: #698356b2;
     color: white;
     border-radius: 10px;
 }

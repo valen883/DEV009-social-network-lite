@@ -15,6 +15,7 @@ function loggin(navigateTo) {
     formLog.classList.add('formLog');
 
     box.setAttribute("id", "boxL");
+    buttonLogin.setAttribute("id", "botonInicio");
     inputEmail.setAttribute("id", "mail");
     inputPass.setAttribute("id", "passw");
     

@@ -13,7 +13,7 @@ function registro(navigateTo){
     const inputEmail = document.createElement('input');
     const inputPass = document.createElement('input');
     inputPass.type ='password';
-    const buttonLogin = document.createElement('button');
+    const buttonReg = document.createElement('button');
     
     formReg.classList.add('formRegister');
     
@@ -21,6 +21,7 @@ function registro(navigateTo){
     inputName.setAttribute("id", "name");
     inputEmail.setAttribute("id", "mail");
     inputPass.setAttribute("id", "passw");
+    buttonReg.setAttribute("id", "botonRegistro");
 
 
     image.src =img;
@@ -28,14 +29,14 @@ function registro(navigateTo){
     inputName.placeholder='Nombre';
     inputEmail.placeholder="Correo electrónico";
     inputPass.placeholder="Contraseña";
-    buttonLogin.textContent ='Registrarme';
+    buttonReg.textContent ='Registrarme';
     buttonRetorn.textContent = 'home';
 
 
     buttonRetorn.addEventListener('click', function(){
         navigateTo('/');
     })
-    buttonLogin.addEventListener('click',function(){
+    buttonReg.addEventListener('click',function(){
         let email =inputEmail.value;
         let passwrd = inputPass.value;
         if (register(email, passwrd)){
@@ -46,7 +47,7 @@ function registro(navigateTo){
         };
     })
 
-    formReg.append(inputName, inputEmail, inputPass, buttonLogin);
+    formReg.append(inputName, inputEmail, inputPass, buttonReg);
 
     section.append(image, buttonRetorn, box, title,formReg);
     return section;
