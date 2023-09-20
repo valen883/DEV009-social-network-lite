@@ -3,7 +3,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #ada6a6, #e0e0e0);
 }
 
 
@@ -16,10 +15,20 @@ img{
 }
 
 
-#idPrueba{
-    position: inherit;
-    top: 80%;
+#botonInicio{
+    position: fixed;
+    top: 75%;
     left: 30%;
+    width: 9em;
+    height: 3em;
+}
+
+#botonRegistro{
+    position: fixed;
+    top: 85%;
+    left: 30%;
+    width: 9em;
+    height: 3em;
 }
 
 input{
@@ -28,7 +37,7 @@ input{
 
 button{
     margin: 10px;
-    background-color: #62824B;
+    background-color: #698356b2;
     color: white;
     border-radius: 10px;
 }
@@ -137,10 +146,35 @@ h3{
     margin: 4px;
     width: 70px;
     height: 30px;
-    background-color: brown;
+    background-color: #698356b2;
     border: gray;
     border-radius: 5px;
     position: fixed;
     top: 32%;
     right: 5px;
 }
+
+#dPost{
+    position: fixed;
+    top: 40%;
+    right: 5px;
+}
+
+article{
+    width: 18em;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*@media (max-width: 1024px) {
+    
+    img{       
+    display: flex;
+    height: 1000px;
+    width: 900px;
+    background-size: contain;
+    text-align: center;
+    }
+}*/
