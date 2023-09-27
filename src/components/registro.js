@@ -22,7 +22,7 @@ function registro(navigateTo){
     inputEmail.setAttribute("id", "mail");
     inputPass.setAttribute("id", "passw");
     buttonReg.setAttribute("id", "botonRegistro");
-
+    buttonRetorn.setAttribute('id', 'home');
 
     image.src =img;
     title.textContent = 'Valusic';
@@ -49,7 +49,7 @@ function registro(navigateTo){
 
     formReg.append(inputName, inputEmail, inputPass, buttonReg);
 
-    section.append(image, buttonRetorn, box, title,formReg);
+    section.append(image, box, title,formReg ,buttonRetorn);
     return section;
 
 }

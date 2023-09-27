@@ -7,7 +7,7 @@ function home(navigateTo) {
     const image =document.createElement('img');
     
     buttonLog.setAttribute("id", "botonInicio");
-    buttonReg.setAttribute("id", "botonRegistro");
+    buttonReg.setAttribute("id", "botonR");
 
 
     image.src =img;

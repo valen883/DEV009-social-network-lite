@@ -18,6 +18,7 @@ function loggin(navigateTo) {
     buttonLogin.setAttribute("id", "botonInicio");
     inputEmail.setAttribute("id", "mail");
     inputPass.setAttribute("id", "passw");
+    buttonRetorn.setAttribute('id', 'home');
     
     inputPass.type ='password';
     image.src =img;
