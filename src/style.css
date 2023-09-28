@@ -167,7 +167,7 @@ h3{
     border-radius: 5px;
     position: fixed;
     top: 32%;
-    right: 5px;
+    right: 22px;
 }
 
 #dPost{
@@ -183,6 +183,16 @@ article{
     text-align: center;
 }
 
+#longOut{   
+    height: 27px;
+    width: 34px;
+    background: transparent;
+    border-radius: 5px;
+    position: fixed;
+    top: 2%;
+    right: 22px;
+}
+
 /*min-width (mayor a )*/
 @media (min-width: 1024px) {
     
@@ -194,3 +204,4 @@ article{
     text-align: center;
     }
 }
+

@@ -16,21 +16,22 @@ function inicio() {
     const boxPublic = document.createElement('button');
     const divPost = document.createElement('div');
 
+    const botonOut = document.createElement('button');
 
     image.src = img;
     inputPost.type = 'text';
-
+    
     boxName.setAttribute("id", "boxName");
     inputPost.setAttribute("id", "post");
     boxPublic.setAttribute("id", "botonPublic");
     divPost.setAttribute('id', 'dPost');
-
+    botonOut.setAttribute('id', 'longOut');
 
     boxName.textContent = getLoggedInUser().email.slice(0, 10);
     title.textContent = 'Valusic';
     inputPost.placeholder = '¿En qué estas pensando?';
     boxPublic.textContent = 'Publicar';
-
+    botonOut.textContent = '❎';
 
     function display() {
         divPost.innerHTML = '';
@@ -73,7 +74,7 @@ function inicio() {
     main.append(formPost, divPost);
     formPost.append(inputPost, boxPublic);
 
-    section.append(image, header, main);
+    section.append(image, header, main, botonOut);
     return section;
 }
 
