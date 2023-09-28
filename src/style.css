@@ -194,14 +194,48 @@ article{
 }
 
 /*min-width (mayor a )*/
-@media (min-width: 1024px) {
-    
+@media (min-width: 768px) {
     img{       
     display: flex;
-    height: 1000px;
-    width: 900px;
-    background-size: contain;
-    text-align: center;
+    height: 100%;
+    width: 41%;
+    right: 26%;
+    position: fixed;
+    }
+
+    #botonInicio{
+        left: 45%;
+    }
+
+    #botonR{
+        left: 45%;
+    }
+
+    #boxL {
+        left: 35%;
+    }
+
+    h2{
+        left: 38%;
+    }
+
+    #name{
+        left: 37%;
+    }
+
+    #mail{
+        left: 37%;
+    }
+
+    #passw {
+        left: 37%;
+    }
+
+    #botonRegistro{
+        left: 44%;
+    }
+
+    #home {
+        left: 45%;
     }
 }
-
