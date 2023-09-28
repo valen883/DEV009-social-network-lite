@@ -1,5 +1,5 @@
 import img from '../images/fondo.jpg'
-import { createPost, getLoggedInUser, getPosts, deletePost } from '../lib/services.js';
+import { createPost, getLoggedInUser, getPosts, deletePost, editPost } from '../lib/services.js';
 
 
 function inicio() {
@@ -41,7 +41,7 @@ function inicio() {
             divPublic.innerHTML += ` <h4>${post.email.slice(0, 10)}</h4>
                      <p>${post.content}</p>
                      <button class="deletePost" value="${post.id}">🗑</button>
-                     <button>🖊</button>`
+                     <button class="editPost">🖊</button>`
 
             divPost.append(divPublic);
         });
@@ -61,12 +61,18 @@ function inicio() {
 }
     display();
 
+    const btnEdit = document.querySelectorAll('.editPost');
+
+
     boxPublic.addEventListener('click', function (a) {
         a.preventDefault();
         const texto = inputPost.value
         console.log(texto);
         console.log(getLoggedInUser());
         createPost(texto, getLoggedInUser().email)
+
+        inputPost.value = '';
+
         display();
     })
 
