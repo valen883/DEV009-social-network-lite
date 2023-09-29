@@ -10,8 +10,6 @@ img{
     display: flex;
     height: 100%;
     width: 100%;
-    background-size: contain;
-    text-align: center;
 }
 
 
@@ -167,7 +165,7 @@ h3{
     border-radius: 5px;
     position: fixed;
     top: 32%;
-    right: 5px;
+    right: 22px;
 }
 
 #dPost{
@@ -183,14 +181,59 @@ article{
     text-align: center;
 }
 
+#longOut{   
+    height: 27px;
+    width: 34px;
+    background: transparent;
+    border-radius: 5px;
+    position: fixed;
+    top: 2%;
+    right: 22px;
+}
+
 /*min-width (mayor a )*/
-@media (min-width: 1024px) {
-    
+@media (min-width: 768px) {
     img{       
     display: flex;
-    height: 1000px;
-    width: 900px;
-    background-size: contain;
-    text-align: center;
+    height: 100%;
+    width: 41%;
+    right: 26%;
+    position: fixed;
+    }
+
+    #botonInicio{
+        left: 45%;
+    }
+
+    #botonR{
+        left: 45%;
+    }
+
+    #boxL {
+        left: 35%;
+    }
+
+    h2{
+        left: 38%;
+    }
+
+    #name{
+        left: 37%;
+    }
+
+    #mail{
+        left: 37%;
+    }
+
+    #passw {
+        left: 37%;
+    }
+
+    #botonRegistro{
+        left: 44%;
+    }
+
+    #home {
+        left: 45%;
     }
 }

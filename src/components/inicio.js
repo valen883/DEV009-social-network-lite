@@ -1,5 +1,5 @@
 import img from '../images/fondo.jpg'
-import { createPost, getLoggedInUser, getPosts, deletePost } from '../lib/services.js';
+import { createPost, getLoggedInUser, getPosts, deletePost, editPost } from '../lib/services.js';
 
 
 function inicio() {
@@ -16,21 +16,22 @@ function inicio() {
     const boxPublic = document.createElement('button');
     const divPost = document.createElement('div');
 
+    const botonOut = document.createElement('button');
 
     image.src = img;
     inputPost.type = 'text';
-
+    
     boxName.setAttribute("id", "boxName");
     inputPost.setAttribute("id", "post");
     boxPublic.setAttribute("id", "botonPublic");
     divPost.setAttribute('id', 'dPost');
-
+    botonOut.setAttribute('id', 'longOut');
 
     boxName.textContent = getLoggedInUser().email.slice(0, 10);
     title.textContent = 'Valusic';
     inputPost.placeholder = '¿En qué estas pensando?';
     boxPublic.textContent = 'Publicar';
-
+    botonOut.textContent = '❎';
 
     function display() {
         divPost.innerHTML = '';
@@ -38,9 +39,9 @@ function inicio() {
             const divPublic = document.createElement('article');
             // console.log(post)
             divPublic.innerHTML += ` <h4>${post.email.slice(0, 10)}</h4>
-                     <p>${post.content}</p>
+                     <p class="contenido" id="${post.id}">${post.content}</p>
                      <button class="deletePost" value="${post.id}">🗑</button>
-                     <button>🖊</button>`
+                     <button class="editPost" value="${post.id}">🖊</button>`
 
             divPost.append(divPublic);
         });
@@ -57,8 +58,26 @@ function inicio() {
          })
         
     })
+    const btnEdit = document.querySelectorAll('.editPost');
+    const post = document.querySelectorAll('.contenido');
+        btnEdit.forEach(btn =>{
+    
+            btn.addEventListener('click', function(){
+                console.log('funciona')
+                post.forEach(texto =>{
+                    if(texto.id === btn.value){
+                      const ventana =  prompt('editar post', texto.textContent)
+                        console.log(ventana)
+                        editPost(texto.id, ventana)
+
+                        display()
+                    }
+                })
+            })
+        })
 }
     display();
+
 
     boxPublic.addEventListener('click', function (a) {
         a.preventDefault();
@@ -66,6 +85,9 @@ function inicio() {
         console.log(texto);
         console.log(getLoggedInUser());
         createPost(texto, getLoggedInUser().email)
+
+        inputPost.value = '';
+
         display();
     })
 
@@ -73,7 +95,7 @@ function inicio() {
     main.append(formPost, divPost);
     formPost.append(inputPost, boxPublic);
 
-    section.append(image, header, main);
+    section.append(image, header, main, botonOut);
     return section;
 }
 
