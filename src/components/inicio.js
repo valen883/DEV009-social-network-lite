@@ -39,9 +39,9 @@ function inicio() {
             const divPublic = document.createElement('article');
             // console.log(post)
             divPublic.innerHTML += ` <h4>${post.email.slice(0, 10)}</h4>
-                     <p>${post.content}</p>
+                     <p class="contenido" id="${post.id}">${post.content}</p>
                      <button class="deletePost" value="${post.id}">🗑</button>
-                     <button class="editPost">🖊</button>`
+                     <button class="editPost" value="${post.id}">🖊</button>`
 
             divPost.append(divPublic);
         });
@@ -58,10 +58,25 @@ function inicio() {
          })
         
     })
+    const btnEdit = document.querySelectorAll('.editPost');
+    const post = document.querySelectorAll('.contenido');
+        btnEdit.forEach(btn =>{
+    
+            btn.addEventListener('click', function(){
+                console.log('funciona')
+                post.forEach(texto =>{
+                    if(texto.id === btn.value){
+                      const ventana =  prompt('editar post', texto.textContent)
+                        console.log(ventana)
+                        editPost(texto.id, ventana)
+
+                        display()
+                    }
+                })
+            })
+        })
 }
     display();
-
-    const btnEdit = document.querySelectorAll('.editPost');
 
 
     boxPublic.addEventListener('click', function (a) {
