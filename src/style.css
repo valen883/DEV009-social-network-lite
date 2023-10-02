@@ -220,7 +220,7 @@ article{
     top: 2%;    
     }
 
-    h2,#name, #mail, #passw{ 
+    h2,h3, #name, #mail, #passw, #boxName, #post, #botonPublic, #dPost{ 
         left: 42%;
         height: 39px;
         text-align: center;
@@ -236,5 +236,9 @@ article{
 
     #name{
         top: 227px;
+    }
+
+    #longOut{
+        right: 27em;
     }
 }
