@@ -192,48 +192,49 @@ article{
 }
 
 /*min-width (mayor a )*/
-@media (min-width: 768px) {
+@media (width > 1024px) {
+    body{
+        margin: auto;
+    }
+
     img{       
     display: flex;
     height: 100%;
-    width: 41%;
-    right: 26%;
+    width: 37%;
+    right: 30%;
     position: fixed;
     }
 
-    #botonInicio{
-        left: 45%;
+    #botonInicio,#botonR, #home, #botonRegistro {
+        left: 46%;
+        height: 4em;
+        width: 10em;    
+        font-family: sans-serif;
+        font-weight: 800;
     }
-
-    #botonR{
-        left: 45%;
-    }
-
+    
     #boxL {
-        left: 35%;
+    left: 38%;
+    width: 322px;
+    height: 35em;
+    top: 2%;    
     }
 
-    h2{
-        left: 38%;
+    h2,#name, #mail, #passw{ 
+        left: 42%;
+        height: 39px;
+        text-align: center;
     }
 
-    #name{
-        left: 37%;
+    #passw{
+        top: 348px;
     }
 
     #mail{
-        left: 37%;
+        top: 287px;
     }
 
-    #passw {
-        left: 37%;
-    }
-
-    #botonRegistro{
-        left: 44%;
-    }
-
-    #home {
-        left: 45%;
+    #name{
+        top: 227px;
     }
 }
