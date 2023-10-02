@@ -93,11 +93,6 @@ h3{
     position: fixed;
     top: 210px;
     left: 11%;
-    /*
-    desktop
-    top: 250px;
-    left: 41%;
-    */
 }
 #mail{
     width: 230px;
@@ -105,10 +100,6 @@ h3{
     position: fixed;
     top: 260px;
     left: 11%;
-    /*desktop
-     top: 300px;
-    left: 41%;
-    */
 }
 #passw{
     width: 230px;
@@ -116,9 +107,6 @@ h3{
     position: fixed;
     top: 310px;
     left: 11%;
-    /*desktop
-    top: 350px;
-    left: 41%;*/
 }
 
 
@@ -131,7 +119,6 @@ h3{
     position: fixed;
     top: 5%;
     left: 5%;
-
 }
 
 #boxName{
@@ -220,7 +207,7 @@ article{
     top: 2%;    
     }
 
-    h2,h3, #name, #mail, #passw, #boxName, #post, #botonPublic, #dPost{ 
+    h2, #name, #mail, #passw{ 
         left: 42%;
         height: 39px;
         text-align: center;
@@ -238,6 +225,25 @@ article{
         top: 227px;
     }
 
+    #boxName, #post, #dPost{ 
+        font-size: 20px;
+        height: 49px;
+        width: 19em;
+        left: 37%;
+        text-align: center;
+    }
+    #botonPublic{
+        font-size: 20px;
+        height: 49px;
+        width: 7em;
+        left: 37%;
+        text-align: center;
+    }
+
+    h3{
+        left: 40%;
+        font-size: 40px;
+    }
     #longOut{
         right: 27em;
     }
