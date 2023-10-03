@@ -156,6 +156,8 @@ h3{
 }
 
 #dPost{
+    height: calc(100% - 320px);
+    overflow-x: hidden;
     position: fixed;
     top: 40%;
     right: 5px;
@@ -174,8 +176,6 @@ article{
     background: transparent;
     border-radius: 5px;
     position: fixed;
-    top: 2%;
-    right: 22px;
 }
 
 /*min-width (mayor a )*/
@@ -227,7 +227,6 @@ article{
 
     #boxName, #post, #dPost{ 
         font-size: 20px;
-        height: 49px;
         width: 19em;
         left: 37%;
         text-align: center;
@@ -244,7 +243,8 @@ article{
         left: 40%;
         font-size: 40px;
     }
-    #longOut{
-        right: 27em;
+    #longOut{    
+    font-size: 16px;
+    right: 35em;
     }
 }
