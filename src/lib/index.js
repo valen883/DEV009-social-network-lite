@@ -7,4 +7,4 @@ export const myFunction = () => {
   console.log('Hola mundo!');
 };
 
-export {createPost, deletePost, editPost, getPosts, init, login, register};
+export { createPost, deletePost, editPost, getPosts, init, login, register };
