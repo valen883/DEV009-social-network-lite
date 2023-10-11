@@ -93,11 +93,6 @@ h3{
     position: fixed;
     top: 210px;
     left: 11%;
-    /*
-    desktop
-    top: 250px;
-    left: 41%;
-    */
 }
 #mail{
     width: 230px;
@@ -105,10 +100,6 @@ h3{
     position: fixed;
     top: 260px;
     left: 11%;
-    /*desktop
-     top: 300px;
-    left: 41%;
-    */
 }
 #passw{
     width: 230px;
@@ -116,9 +107,6 @@ h3{
     position: fixed;
     top: 310px;
     left: 11%;
-    /*desktop
-    top: 350px;
-    left: 41%;*/
 }
 
 
@@ -131,7 +119,6 @@ h3{
     position: fixed;
     top: 5%;
     left: 5%;
-
 }
 
 #boxName{
@@ -169,6 +156,8 @@ h3{
 }
 
 #dPost{
+    height: calc(100% - 320px);
+    overflow-x: hidden;
     position: fixed;
     top: 40%;
     right: 5px;
@@ -187,8 +176,6 @@ article{
     background: transparent;
     border-radius: 5px;
     position: fixed;
-    top: 2%;
-    right: 22px;
 }
 
 /*min-width (mayor a )*/
@@ -206,35 +193,60 @@ article{
     }
 
     #botonInicio,#botonR, #home, #botonRegistro {
-        left: 46%;
+        left: 47%;
         height: 4em;
         width: 10em;    
+        font-size: 15px;
         font-family: sans-serif;
         font-weight: 800;
     }
     
     #boxL {
     left: 38%;
-    width: 322px;
-    height: 35em;
+    width: 432px;
+    height: 45em;
     top: 2%;    
     }
 
-    h2,#name, #mail, #passw{ 
-        left: 42%;
-        height: 39px;
+    h2, #name, #mail, #passw{ 
+        left: 44%;
+        height: 55px;
+        margin: 10px;
         text-align: center;
     }
 
     #passw{
-        top: 348px;
+        top: 398px;
     }
 
     #mail{
-        top: 287px;
+        top: 327px;
     }
 
     #name{
-        top: 227px;
+        top: 247px;
+    }
+
+    #boxName, #post, #dPost{ 
+        font-size: 20px;
+        width: 19em;
+        left: 37%;
+        text-align: center;
+    }
+    #botonPublic{
+        font-size: 20px;
+        height: 49px;
+        width: 7em;
+        left: 37%;
+        text-align: center;
+    }
+
+    h3{
+        left: 40%;
+        font-size: 40px;
+    }
+    #longOut{    
+    font-size: 16px;
+    right: 35em;
     }
 }

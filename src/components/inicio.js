@@ -1,8 +1,8 @@
 import img from '../images/fondo.jpg'
-import { createPost, getLoggedInUser, getPosts, deletePost, editPost } from '../lib/services.js';
+import { createPost, getLoggedInUser, getPosts, deletePost, editPost, logout } from '../lib/services.js';
 
 
-function inicio() {
+function inicio(navigateTo) {
     const section = document.createElement('section');
     const image = document.createElement('img');
 
@@ -20,7 +20,7 @@ function inicio() {
 
     image.src = img;
     inputPost.type = 'text';
-    
+
     boxName.setAttribute("id", "boxName");
     inputPost.setAttribute("id", "post");
     boxPublic.setAttribute("id", "botonPublic");
@@ -35,7 +35,7 @@ function inicio() {
 
     function display() {
         divPost.innerHTML = '';
-          getPosts().forEach(post => {
+        getPosts().forEach(post => {
             const divPublic = document.createElement('article');
             // console.log(post)
             divPublic.innerHTML += ` <h4>${post.email.slice(0, 10)}</h4>
@@ -48,25 +48,25 @@ function inicio() {
 
 
 
-    const btnDelete = document.querySelectorAll('.deletePost');
-    // console.log(btnDelete)
-    btnDelete.forEach(btn => {
-        btn.addEventListener('click', function () {
-            console.log('funciona' + btn.value)
-            deletePost(btn.value);
-            display()
-         })
-        
-    })
-    const btnEdit = document.querySelectorAll('.editPost');
-    const post = document.querySelectorAll('.contenido');
-        btnEdit.forEach(btn =>{
-    
-            btn.addEventListener('click', function(){
+        const btnDelete = document.querySelectorAll('.deletePost');
+        // console.log(btnDelete)
+        btnDelete.forEach(btn => {
+            btn.addEventListener('click', function () {
+                console.log('funciona' + btn.value)
+                deletePost(btn.value);
+                display()
+            })
+
+        })
+        const btnEdit = document.querySelectorAll('.editPost');
+        const post = document.querySelectorAll('.contenido');
+        btnEdit.forEach(btn => {
+
+            btn.addEventListener('click', function () {
                 console.log('funciona')
-                post.forEach(texto =>{
-                    if(texto.id === btn.value){
-                      const ventana =  prompt('editar post', texto.textContent)
+                post.forEach(texto => {
+                    if (texto.id === btn.value) {
+                        const ventana = prompt('editar post', texto.textContent)
                         console.log(ventana)
                         editPost(texto.id, ventana)
 
@@ -75,7 +75,14 @@ function inicio() {
                 })
             })
         })
-}
+
+        botonOut.addEventListener('click', function () {
+            console.log('funciona');
+            logout();
+            navigateTo('/');
+        })
+    }
+
     display();
 
 
@@ -88,7 +95,10 @@ function inicio() {
 
         inputPost.value = '';
 
+
         display();
+
+
     })
 
     header.append(title, boxName);
