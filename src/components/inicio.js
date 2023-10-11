@@ -2,7 +2,7 @@ import img from '../images/fondo.jpg'
 import { createPost, getLoggedInUser, getPosts, deletePost, editPost, logout } from '../lib/services.js';
 
 
-function inicio() {
+function inicio(navigateTo) {
     const section = document.createElement('section');
     const image = document.createElement('img');
 
@@ -78,7 +78,8 @@ function inicio() {
 
         botonOut.addEventListener('click', function () {
             console.log('funciona');
-            /*logout()*/
+            logout();
+            navigateTo('/');
         })
     }
 
