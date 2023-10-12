@@ -1,8 +1,17 @@
 // importamos la funcion que vamos a testear
-import {  register, login, getLoggedInUser, createPost, getPosts, logout, editPost } from '../src/lib/index';
+import {
+  register,
+  login,
+  getLoggedInUser,
+  createPost,
+  getPosts,
+  logout,
+  editPost,
+}
+  from '../src/lib/index';
 import { init } from '../src/lib/services';
 
-//simulacion de datos necesarios antes de correr las pruebas
+// simulacion de datos necesarios antes de correr las pruebas
 beforeEach(() => {
   const users = [{ email: 'usuario@ejemplo.com', password: '123456' }];
   const loggedInUser = { email: 'usuario@ejemplo.com', password: '123456' };
@@ -13,7 +22,7 @@ beforeEach(() => {
 
   // variable global simulando el comportamiento del almacenamiento local
   global.localStorage = {
-    //devuelve diferentes valores dependiendo de la clave proporcionada
+    // devuelve diferentes valores dependiendo de la clave proporcionada
     getItem: jest.fn((key) => {
       switch (key) {
         case 'users':
@@ -26,28 +35,25 @@ beforeEach(() => {
           return null;
       }
     }),
-    //guarda un valor asociado a una clave específica
+    // guarda un valor asociado a una clave específica
     setItem: jest.fn(),
     removeItem: jest.fn(),
     clear: jest.fn(),
   };
 });
 
-
 // test funcion init
 describe('init funcion', () => {
   it('Debe borrar el localStorage', () => {
-  init();
-  expect(localStorage.clear).toHaveBeenCalled();
+    init();
+    expect(localStorage.clear).toHaveBeenCalled();
   });
 });
-
-
 
 // TEST para la funcion register
 describe('Register funcion', () => {
   it('Debe registrar un nuevo usuario', () => {
-    localStorage.getItem.mockReturnValueOnce(null); 
+    localStorage.getItem.mockReturnValueOnce(null);
     const result = register('usuario@ejemplo.com', '123456');
     expect(result).toBe(true);
     expect(localStorage.setItem).toHaveBeenCalledWith('users', JSON.stringify([{ email: 'usuario@ejemplo.com', password: '123456' }]));
