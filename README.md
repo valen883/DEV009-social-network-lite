@@ -94,12 +94,12 @@ A través del tiempo el ser humano ha creado diversas maneras de representar emo
 
   Valusic es un espacio dedicado a la pasión por la música y su inmenso poder de unir a personas de todas las edades, antecedentes y niveles de experiencia. Está diseñada para servir como un epicentro de discusión, compartimiento de conocimientos y apreciación musical. Aquí, puedes esperar:
   
-  *_1. Compartir tu pasión:_ Valusic es el lugar perfecto para compartir tus gustos musicales y descubrir otros géneros y artistas que quizás nunca hayas explorado. Con un enfoque en la diversidad, promovemos la apertura y el respeto hacia todas las formas de expresión musical.
+    *_1. Compartir tu pasión:_ Valusic es el lugar perfecto para compartir tus gustos musicales y descubrir otros géneros y artistas que quizás nunca hayas explorado. Con un enfoque en la diversidad, promovemos la apertura y el respeto hacia todas las formas de expresión musical.
 
-  *_2. Debates y discusiones:_ Espacios para debatir y discutir sobre música, desde teoría musical hasta críticas de álbumes, tendencias en la industria y más. Aprende de expertos y obtén diferentes perspectivas sobre los temas musicales que te interesan.
+    * _2. Debates y discusiones:_ Espacios para debatir y discutir sobre música, desde teoría musical hasta críticas de álbumes, tendencias en la industria y más. Aprende de expertos y obtén diferentes perspectivas sobre los temas musicales que te interesan.
   
-  *_3. Aprendizaje continuo:_ La música es una fuente infinita de aprendizaje. Construimos espacios educativos, lecciones, tutoriales y la posibilidad de hacer preguntas a expertos en música. Ya sea que estés perfeccionando tus habilidades o recién comenzando, encontrarás un valioso apoyo.
+    *_3. Aprendizaje continuo:_ La música es una fuente infinita de aprendizaje. Construimos espacios educativos, lecciones, tutoriales y la posibilidad de hacer preguntas a expertos en música. Ya sea que estés perfeccionando tus habilidades o recién comenzando, encontrarás un valioso apoyo.
 
-  *_4. Promoción de talento:_ Si eres un músico, cantante, compositor o productor, Valusic es un trampolín para exponer tu talento al mundo. Comparte tus creaciones, obtén retroalimentación valiosa y conecta con personas que pueden ayudarte a avanzar en tu carrera musical.
+    *_4. Promoción de talento:_ Si eres un músico, cantante, compositor o productor, Valusic es un trampolín para exponer tu talento al mundo. Comparte tus creaciones, obtén retroalimentación valiosa y conecta con personas que pueden ayudarte a avanzar en tu carrera musical.
 
   *_5. Exploración cultural:_ La música es un reflejo de la sociedad y las culturas que la crean. Exploramos cómo la música influye en diferentes culturas y comunidades alrededor del mundo, promoviendo la comprensión y el respeto cultural.
