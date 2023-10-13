@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+#botonInicio{
+    position: fixed;
+    top: 70%;
+    left: 30%;
+    width: 9em;
+    height: 3em;
+}
+
+#botonRegistro{
+    position: fixed;
+    top: 68%;
+    left: 30%;
+    width: 9em;
+    height: 3em;
+}
+
+#botonR{
+    position: fixed;
+    top: 80%;
+    left: 30%;
+    width: 9em;
+    height: 3em;
+}
+
+#home{
+    position: fixed;
+    top: 79%;
+    left: 30%;
+    width: 9em;
+    height: 3em;   
+}
+input{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+    background-color: #698356b2;
+    color: white;
+    border-radius: 10px;
+}
+
+h2{ 
+    color: #62824B;
+    font-size: 5em;
+    position: fixed;
+    top: 10%;
+    left: 12%;
+}
+
+h3{ 
+    color: #3f6822;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 7%;
+}
+
+
+#boxL{
+    margin: 10px;
+    width: 270px;
+    height: 475px;
+    background-color: rgba(249, 252, 252, 0.63);
+    border-radius: 40px;
+    
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    /*desktop
+    top: 5%;
+    left: 40%;
+    */
+}
+#name{
+    width: 230px;
+    height: 30px;
+    position: fixed;
+    top: 210px;
+    left: 11%;
+}
+#mail{
+    width: 230px;
+    height: 30px;
+    position: fixed;
+    top: 260px;
+    left: 11%;
+}
+#passw{
+    width: 230px;
+    height: 30px;
+    position: fixed;
+    top: 310px;
+    left: 11%;
+}
+
+
+#boxI{
+    margin: 8px;
+    width: 270px;
+    height: 480px;
+    background-color: rgba(181, 190, 177, 0.952);
+    border-radius: 40px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+#boxName{
+    margin: 8px;
+    width: 270px;
+    height: 30px;
+    background-color: #698356b2;
+    border-radius: 10px;
+    position: fixed;
+    top: 12%;
+    left: 5%;
+}
+
+#post{
+    margin: 8px;
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 21%;
+    left: 5%;
+}
+
+#botonPublic{
+    margin: 4px;
+    width: 70px;
+    height: 30px;
+    background-color: #698356b2;
+    border: gray;
+    border-radius: 5px;
+    position: fixed;
+    top: 32%;
+    right: 22px;
+}
+
+#dPost{
+    height: calc(100% - 320px);
+    overflow-x: hidden;
+    position: fixed;
+    top: 40%;
+    right: 5px;
+}
+
+article{
+    width: 18em;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#longOut{   
+    height: 27px;
+    width: 34px;
+    background: transparent;
+    border-radius: 5px;
+    position: fixed;
+}
+
+/*min-width (mayor a )*/
+@media (width > 1024px) {
+    body{
+        margin: auto;
+    }
+
+    img{       
+    display: flex;
+    height: 100%;
+    width: 37%;
+    right: 30%;
+    position: fixed;
+    }
+
+    #botonInicio,#botonR, #home, #botonRegistro {
+        left: 47%;
+        height: 4em;
+        width: 10em;    
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: 800;
+    }
+    
+    #boxL {
+    left: 38%;
+    width: 432px;
+    height: 45em;
+    top: 2%;    
+    }
+
+    h2, #name, #mail, #passw{ 
+        left: 44%;
+        height: 55px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #passw{
+        top: 398px;
+    }
+
+    #mail{
+        top: 327px;
+    }
+
+    #name{
+        top: 247px;
+    }
+
+    #boxName, #post, #dPost{ 
+        font-size: 20px;
+        width: 19em;
+        left: 37%;
+        text-align: center;
+    }
+    #botonPublic{
+        font-size: 20px;
+        height: 49px;
+        width: 7em;
+        left: 37%;
+        text-align: center;
+    }
+
+    h3{
+        left: 40%;
+        font-size: 40px;
+    }
+    #longOut{    
+    font-size: 16px;
+    right: 35em;
+    }
+}
