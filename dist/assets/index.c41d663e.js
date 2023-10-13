@@ -40,7 +40,7 @@
   }
 })();
 const style = "";
-const img$1 = "/assets/vista1.55f971d3.jpg";
+const img$1 = "/DEV009-social-network-lite/assets/vista1.55f971d3.jpg";
 function home(navigateTo2) {
   const section = document.createElement("section");
   const buttonLog = document.createElement("button");
@@ -251,7 +251,7 @@ function registro(navigateTo2) {
   section.append(image, box, title, formReg, buttonRetorn);
   return section;
 }
-const img = "/assets/fondo.5895442c.jpg";
+const img = "/DEV009-social-network-lite/assets/fondo.5895442c.jpg";
 function inicio(navigateTo2) {
   const section = document.createElement("section");
   const image = document.createElement("img");
